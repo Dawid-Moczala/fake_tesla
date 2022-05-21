@@ -19,15 +19,15 @@
     margin-left: 15px;
     display: flex;
     flex: 2;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .header__menu-box{
     display: flex;
     flex: 1;
-    justify-content: space-around;
+    justify-content: end;
     align-items: center;
-    margin-left: 80px;
+    margin-right: 40px;
 }
 .header__menu-item, .header__model-item{
     text-decoration: none;
