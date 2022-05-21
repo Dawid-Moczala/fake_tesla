@@ -7,9 +7,13 @@ body{
     font-family:'Arial', 'Roboto', sans-serif;
     height: 5000px;
 }
-.back{
+
+.background__item{
   width: 100%;
+  height: auto;
+  margin-bottom: -4px;
   position: relative;
-  top: 53px;
   z-index: -1;
 }
+
+ 
