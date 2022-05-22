@@ -4,16 +4,19 @@
     box-sizing: border-box;
 }
 body{
-    font-family:'Arial', 'Roboto', sans-serif;
+    font-family: 'Plus Jakarta Sans', 'PT Sans', 'Roboto','Arial', sans-serif;
     height: 5000px;
 }
 
 .background__item{
+  object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100vh;
   margin-bottom: -4px;
   position: relative;
   z-index: -1;
 }
+
+
 
  
