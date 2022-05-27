@@ -1,6 +1,6 @@
 $breakpoints-down:(
     'large': 75em,
-    'small': 37.5,
+    'small': 37.5em,
 );
 
 @mixin break($size){

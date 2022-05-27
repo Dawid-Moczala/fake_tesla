@@ -24,25 +24,39 @@
     width: 100%;
     position: fixed;
     bottom: 110px;
-    .order__item-1, .order__item-2{
-        @include center;
-        box-sizing: content-box;
-        width: 215px;
-        height: 32px;
-        padding: 4px 24px;
-        margin: 0 12px;
-        border-radius: 20px;
-        font-size: 12px;
-        text-decoration: none;
-        letter-spacing: 1px;
-    }
     .order__item-1{   
-        color: #fff;
+        color: $white;
         background-color: $bg-color-1;  
     }
     .order__item-2{
         color: $font-color-2;
         background-color: $bg-color-2;
+    }
+}
+
+.order__item-1, .order__item-2{
+    @include center;
+    box-sizing: content-box;
+    width: 215px;
+    height: 32px;
+    padding: 4px 24px;
+    margin: 0 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+@include break(small){
+    .order{
+        flex-direction: column;
+    }
+    .order__item-1, .order__item-2{
+        width: 80%; 
+    }
+    .order__item-2{
+        bottom: -20px;
+        position: relative;
     }
 }
 
