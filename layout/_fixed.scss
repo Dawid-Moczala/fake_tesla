@@ -37,8 +37,8 @@
 .order__item-1, .order__item-2{
     @include center;
     box-sizing: content-box;
-    width: 215px;
     height: 32px;
+    width: 216px;
     padding: 4px 24px;
     margin: 0 12px;
     border-radius: 20px;
@@ -49,14 +49,20 @@
 
 @include break(small){
     .order{
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 24px 1fr 24px;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 20px;
     }
-    .order__item-1, .order__item-2{
-        width: 80%; 
+    .order__item-1{
+        grid-area: 1/2/2/3;
     }
     .order__item-2{
-        bottom: -20px;
-        position: relative;
+        grid-area: 2/2/3/3;
+    }
+    .order__item-2, .order__item-1{
+        margin: 0;
+        width: initial;
     }
 }
 
