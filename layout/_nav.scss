@@ -1,26 +1,26 @@
-.header{
+.nav{
     display: flex;
     justify-content: space-between;
     height: 56px;
-    .header__logo-box{
+    .nav__logo-box{
         display: flex;
         flex: 1;
         justify-content: flex-start;
         align-items: center;
         width: 240px;
         padding-left: 40px;
-        .header__logo{
+        .nav__logo{
             width:  150px;
             height: 28px;
         }
     }
-    .header__model-box{
+    .nav__model-box{
         display: flex;
         justify-content: space-around;
         align-items: center;
         width: 600px;
     }
-    .header__menu-box{
+    .nav__menu-box{
         display: flex;
         flex: 1;
         justify-content: flex-end;
@@ -28,23 +28,23 @@
         margin-right: 40px;
     }
     @include break(large){
-        .header__model-box{
+        .nav__model-box{
             display: none;
         }
-        .header__menu-box{
+        .nav__menu-box{
             margin-right: 2px;
         }
-        .header__menu-item--break{
+        .nav__menu-item--break{
             display: none;
         }
-        .header__menu-box div:last-child{
+        .nav__menu-box div:last-child{
             background-color: $hover-color;
             border-radius: 12px;
         }
     }
 }
   
-.header__menu-item, .header__model-item{
+.nav__menu-item, .nav__model-item{
     box-sizing: border-box;
     display: block;
     text-decoration: none;
@@ -56,6 +56,6 @@
     border-radius: 12px;
     transition: background-color 0.1s;
 }
-.header__menu-item:hover, .header__model-item:hover{
+.nav__menu-item:hover, .nav__model-item:hover{
     background-color: $hover-color;
     }
